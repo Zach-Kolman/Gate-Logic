@@ -26,18 +26,19 @@ public class PlayerCOntroller : MonoBehaviour
 		float moveV = Input.GetAxis ("Vertical");
 
 		if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") == 0) {
-			anim.SetFloat ("Speed", Mathf.Abs (moveH));
+			anim.SetFloat ("Speed", 10);
 
-		} else if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") != 0) {
-			anim.SetFloat ("Speed", Mathf.Abs (moveV));
 		}
+		else if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") != 0) {
+			anim.SetFloat ("Speed", 10);
 
+		}
 		if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") != 0) {
-			anim.SetFloat ("Speed", Mathf.Abs (moveH));
-		}
+			anim.SetFloat ("Speed", 10);
 
+		}
 		else if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") == 0) {
-			anim.SetFloat ("Speed", Mathf.Abs (moveV));
+			anim.SetFloat ("Speed", 0);
 		}
 
 	
