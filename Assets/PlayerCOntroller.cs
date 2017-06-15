@@ -10,6 +10,7 @@ public class PlayerCOntroller : MonoBehaviour
 	private Vector3 rigi;
 
 	private bool facingRight = true;
+	private bool facingTowards = true;
 
 	Animator anim;
 
@@ -27,18 +28,33 @@ public class PlayerCOntroller : MonoBehaviour
 
 		if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") == 0) {
 			anim.SetFloat ("Speed", 10);
+			anim.SetFloat ("Backwards", 0);
 
 		}
-		else if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") != 0) {
+		if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") > 0) {
+			anim.SetFloat ("Backwards", 10);
+			anim.SetFloat ("Speed", 0);
+		}
+
+		else if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") <= 0) {
 			anim.SetFloat ("Speed", 10);
+			anim.SetFloat ("Backwards", 0);
 
 		}
-		if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") != 0) {
+		if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") > 0) {
+			anim.SetFloat ("Backwards", 10);
+			anim.SetFloat ("Speed", 0);
+
+		}
+
+		else if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") <= 0) {
 			anim.SetFloat ("Speed", 10);
+			anim.SetFloat ("Backwards", 0);
 
 		}
 		else if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") == 0) {
 			anim.SetFloat ("Speed", 0);
+			anim.SetFloat ("Backwards", 0);
 		}
 
 	
@@ -47,6 +63,11 @@ public class PlayerCOntroller : MonoBehaviour
 			Flip ();
 		else if (moveH < 0 && facingRight)
 			Flip ();
+
+//		if (moveV > 0 && !facingTowards)
+//			FlipBack ();
+//		else if (moveV < 0 && facingTowards)
+//			FlipBack ();
 	}
 
 	void Flip ()
@@ -56,4 +77,12 @@ public class PlayerCOntroller : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+//	void FlipBack ()
+//	{
+//		facingTowards = !facingTowards;
+//		Vector3 theBehind;
+//		theBehind.x *= -1;
+//		anim.SetFloat ("Backwards", theBehind.x);
+//	}
 }

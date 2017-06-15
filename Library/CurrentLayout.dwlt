@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 78
+  controlID: 11
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 560
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 252
     height: 596
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1360
     height: 947
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 79
+  controlID: 12
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,10 +230,10 @@ MonoBehaviour:
     y: 0
     width: 1360
     height: 596
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 80
+  controlID: 13
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,12 +295,14 @@ MonoBehaviour:
     - {fileID: 1107785279679140828, guid: e4c4e7b8cd183a544bd6afd68a29d32a, type: 2}
     - {fileID: 1107439641169594086, guid: ffe8de66fecb6234a82c43ba6854d1bd, type: 2}
     - {fileID: 1107050296491285164, guid: dbf3a7c0fe7b2004aad22751322a05d0, type: 2}
+    - {fileID: 1107447631959205458, guid: 343dc37bf6377cd438268d3177732520, type: 2}
     m_ValueSerializationHelper:
-    - {x: 518.4, y: 379}
-    - {x: 468.40002, y: 227}
+    - {x: 557.4, y: 383}
+    - {x: 420.40002, y: 216}
+    - {x: 420.40002, y: 236}
+    - {x: 362.40002, y: 236}
     - {x: 468.40002, y: 247}
-    - {x: 410.40002, y: 247}
-    - {x: 468.40002, y: 247}
+    - {x: 170.40002, y: 231}
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: ad05580a84c05994cb46ba223eebef39,
     type: 2}
@@ -388,13 +390,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\zkolman\GateLogicProj\Gate-Logic
+  m_LastProjectPath: C:\Users\zkolman\Gate-Logic
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 943d0000
-    m_LastClickedID: 15764
-    m_ExpandedIDs: 00000000943d000000ca9a3bffffff7f
+    m_SelectedIDs: 642d0000
+    m_LastClickedID: 11620
+    m_ExpandedIDs: 00000000642d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -422,7 +424,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000943d0000
+    m_ExpandedIDs: 00000000642d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,9 +540,9 @@ MonoBehaviour:
     height: 575
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 164cffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 32b9ffff000000008e400000
+    m_ExpandedIDs: 60e6ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -622,7 +624,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.09904012, y: 0.1766473, z: -0.017868416, w: 0.97911566}
     speed: 2
-    m_Value: {x: 0.09904013, y: 0.17664732, z: -0.017868418, w: 0.9791157}
+    m_Value: {x: -0.09904011, y: -0.1766473, z: 0.017868416, w: -0.97911566}
   m_Size:
     m_Target: 10
     speed: 2
