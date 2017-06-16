@@ -27,28 +27,28 @@ public class PlayerCOntroller : MonoBehaviour
 		float moveV = Input.GetAxis ("Vertical");
 
 		if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") == 0) {
-			anim.SetFloat ("Speed", 10);
+			anim.SetFloat ("Speed", 1);
 			anim.SetFloat ("Backwards", 0);
 
 		}
 		if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") > 0) {
-			anim.SetFloat ("Backwards", 10);
+			anim.SetFloat ("Backwards", 1);
 			anim.SetFloat ("Speed", 0);
 		}
 
 		else if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") <= 0) {
-			anim.SetFloat ("Speed", 10);
+			anim.SetFloat ("Speed", 1);
 			anim.SetFloat ("Backwards", 0);
 
 		}
 		if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") > 0) {
-			anim.SetFloat ("Backwards", 10);
+			anim.SetFloat ("Backwards", 1);
 			anim.SetFloat ("Speed", 0);
 
 		}
 
 		else if (Input.GetAxis ("Horizontal") != 0 && Input.GetAxis ("Vertical") <= 0) {
-			anim.SetFloat ("Speed", 10);
+			anim.SetFloat ("Speed", 1);
 			anim.SetFloat ("Backwards", 0);
 
 		}

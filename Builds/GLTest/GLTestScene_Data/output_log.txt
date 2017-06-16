@@ -1,0 +1,44 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro 2000 (ID=0xdd8)
+    Vendor:   NVIDIA
+    VRAM:     979 MB
+    Driver:   21.21.13.7684
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.023 seconds
+Platform assembly: C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\zkolman\Gate-Logic\Builds\GLTestScene_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 16.590937 ms
+Setting up 6 worker threads for Enlighten.
+  Thread -> id: 2c98 -> priority: 1 
+  Thread -> id: 1a28 -> priority: 1 
+  Thread -> id: 21e4 -> priority: 1 
+  Thread -> id: 31e0 -> priority: 1 
+  Thread -> id: 1a84 -> priority: 1 
+  Thread -> id: 3c14 -> priority: 1 
+This just happened
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.518696 ms
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 13.733827 ms (FindLiveObjects: 0.020529 ms CreateObjectMapping: 0.018283 ms MarkObjects: 11.850258 ms  DeleteObjects: 1.844114 ms)
+

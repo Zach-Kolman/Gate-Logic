@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gate-Logic", "Assembly-CSha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gate-Logic", "Assembly-CSharp-Editor-firstpass.csproj", "{D61C1777-DD91-DA29-AA87-CCCADD8FAEB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gate-Logic", "Assembly-CSharp-Editor.csproj", "{C60C378D-292A-F272-F10D-9CB1F4324030}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{D61C1777-DD91-DA29-AA87-CCCADD8FAEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D61C1777-DD91-DA29-AA87-CCCADD8FAEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D61C1777-DD91-DA29-AA87-CCCADD8FAEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60C378D-292A-F272-F10D-9CB1F4324030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60C378D-292A-F272-F10D-9CB1F4324030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60C378D-292A-F272-F10D-9CB1F4324030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60C378D-292A-F272-F10D-9CB1F4324030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
