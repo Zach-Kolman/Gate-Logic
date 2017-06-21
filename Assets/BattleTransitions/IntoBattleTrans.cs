@@ -9,7 +9,7 @@ public class IntoBattleTrans : MonoBehaviour {
 	float cutoff;
 	// Use this for initialization
 	void Start () {
-		transMat.SetFloat("_Cutoff", 1);
+		cutoff = transMat.GetFloat ("_Cutoff");
 		Debug.Log ("This just happened");
 		StartCoroutine ("Transition");
 		print (cutoff);
@@ -24,7 +24,7 @@ public class IntoBattleTrans : MonoBehaviour {
 
 	IEnumerator Transition ()
 	{
-		while (cutoff >= 1) {
+		while (cutoff > 0) {
 			cutoff -= 0.5f * Time.deltaTime;
 			yield return null;
 		}
