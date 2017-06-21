@@ -4,7 +4,7 @@ Shader "Hidden/BattleTransitions"
 {
 	Properties
 	{
-		_MainTex("Texture", 2D) = "white" {}
+		_MainTex("Color (RGB) Alpha (A)", 2D) = "white" {}
 		_TransitionTex("Transition Texture", 2D) = "white" {}
 		_Color("Screen Color", Color) = (1,1,1,1)
 		_Cutoff("Cutoff", Range(0, 1)) = 0

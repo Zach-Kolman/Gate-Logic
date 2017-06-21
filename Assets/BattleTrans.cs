@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BattleTrans : MonoBehaviour {
+public class BattleTrans : MonoBehaviour
+{
 
 	public Material transMat;
-	private float cutoff;
+	float cutoff;
 	public string target;
 	// Use this for initialization
-	void Start () {
-		cutoff = transMat.GetFloat ("_Cutoff");
+	void Start ()
+	{
+		cutoff = transMat.GetFloat ("Cutoff");
 		print (cutoff);
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+		transMat.SetFloat ("_Cutoff", cutoff);
 		print (cutoff);
 	}
+
 
 
 	void OnTriggerEnter (Collider other)
@@ -25,15 +30,24 @@ public class BattleTrans : MonoBehaviour {
 		
 		Debug.Log ("This just happened");
 		if (other.gameObject.tag == target) {
-			StartCoroutine (Transition ());
-			SceneManager.LoadScene ("BattleTest");
+			StartCoroutine ("Transition");
+
 		}
 	}
+
 	
 	IEnumerator Transition ()
 	{
-		transMat.SetFloat ("_Cutoff", 0.5f);
-	
+		while (cutoff < 1) {
+			cutoff += 0.5f * Time.deltaTime;
+			yield return null;
+		}
+
+	}
+
+	IEnumerator SceneSwap ()
+	{
+		SceneManager.LoadScene ("BattleTest");
 		yield return null;
 	}
 }
