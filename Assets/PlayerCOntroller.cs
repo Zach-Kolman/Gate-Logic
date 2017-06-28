@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerCOntroller : MonoBehaviour
 {
-
 	public float maxSpeed = 10f;
 
 	private Vector3 rigi;
 
+	bool isAttacking;
 	private bool facingRight = true;
 	private bool facingTowards = true;
 
@@ -22,7 +22,6 @@ public class PlayerCOntroller : MonoBehaviour
 
 	void Update ()
 	{
-
 		float moveH = Input.GetAxis ("Horizontal");
 		float moveV = Input.GetAxis ("Vertical");
 
@@ -77,6 +76,25 @@ public class PlayerCOntroller : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	public void playAttack()
+	{
+		if (anim.GetBool ("Attack") == false) 
+		{
+			StartCoroutine ("setTrue");
+			Debug.Log ("Ravage them");
+		}
+
+	}
+
+	IEnumerator setTrue()
+	{
+		anim.SetBool ("Attack", true);
+		yield return new WaitForSeconds (2);
+		anim.SetBool ("Attack", false);
+	}
+
+
 
 //	void FlipBack ()
 //	{

@@ -18,7 +18,7 @@ public class IntoBattleTrans : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transMat.SetFloat ("_Cutoff", cutoff);
-		print (cutoff);
+		//print (cutoff);
 	}
 		
 
