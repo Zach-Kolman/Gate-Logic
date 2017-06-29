@@ -51,6 +51,7 @@
      <Compile Include="Assets\BattleTrans.cs" />
      <Compile Include="Assets\BattleTransitions\IntoBattleTrans.cs" />
      <Compile Include="Assets\BattleTransitions\SimpleBlit.cs" />
+     <Compile Include="Assets\KillbotControls.cs" />
      <Compile Include="Assets\Moce.cs" />
      <Compile Include="Assets\PlayerCOntroller.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
