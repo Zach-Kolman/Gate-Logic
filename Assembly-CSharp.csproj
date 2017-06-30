@@ -46,14 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AudioControl.cs" />
-     <Compile Include="Assets\BattleFlow.cs" />
-     <Compile Include="Assets\BattleTrans.cs" />
      <Compile Include="Assets\BattleTransitions\IntoBattleTrans.cs" />
      <Compile Include="Assets\BattleTransitions\SimpleBlit.cs" />
-     <Compile Include="Assets\KillbotControls.cs" />
-     <Compile Include="Assets\Moce.cs" />
-     <Compile Include="Assets\PlayerCOntroller.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -99,7 +93,13 @@
      <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Scripts\AudioControl.cs" />
+     <Compile Include="Assets\Scripts\BattleFlow.cs" />
+     <Compile Include="Assets\Scripts\BattleTrans.cs" />
      <Compile Include="Assets\Scripts\CamFollow.cs" />
+     <Compile Include="Assets\Scripts\KillbotControls.cs" />
+     <Compile Include="Assets\Scripts\Moce.cs" />
+     <Compile Include="Assets\Scripts\PlayerCOntroller.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

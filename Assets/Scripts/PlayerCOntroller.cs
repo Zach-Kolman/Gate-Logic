@@ -10,13 +10,12 @@ public class PlayerCOntroller : MonoBehaviour
 
 	bool isAttacking;
 	private bool facingRight = true;
-	private bool facingTowards = true;
-
+	//private bool facingTowards = true;
 	Animator anim;
 
 	void Start ()
 	{
-		anim = GetComponent<Animator> ();
+		anim = gameObject.GetComponent<Animator> ();
 		rigi = transform.localScale;
 	}
 
@@ -75,23 +74,6 @@ public class PlayerCOntroller : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
-	}
-
-	public void playAttack()
-	{
-		if (anim.GetBool ("Attack") == false) 
-		{
-			StartCoroutine ("setTrue");
-			Debug.Log ("Ravage them");
-		}
-
-	}
-
-	IEnumerator setTrue()
-	{
-		anim.SetBool ("Attack", true);
-		yield return new WaitForSeconds (2);
-		anim.SetBool ("Attack", false);
 	}
 
 
