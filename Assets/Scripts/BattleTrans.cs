@@ -47,7 +47,7 @@ public class BattleTrans : MonoBehaviour
 	IEnumerator Transition ()
 	{
 		while (cutoff < 1) {
-			cutoff += 0.5f * Time.deltaTime;
+			cutoff += Time.deltaTime;
 			yield return null;
 		}
 
