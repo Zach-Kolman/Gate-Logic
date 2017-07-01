@@ -37,7 +37,7 @@ public class BattleFlow : MonoBehaviour {
 		if (playerDone == true) {
 			StartCoroutine ("setEnemyAtkTrue");
 			Debug.Log ("Ravage them");
-		}
+		} 
 	}
 
 	public void atkOpt()
