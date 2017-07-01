@@ -8,11 +8,19 @@ public class BattleFlow : MonoBehaviour {
 	Animator playerAnim;
 	Animator enemyAnim;
 
+	public Material transMat;
+
+	float cutoff;
+
 	public GameObject player;
 	public GameObject enemy;
+	public GameObject enemyControls;
 	public GameObject rangedButton;
 	public GameObject directButton;
 	public GameObject atkOptButton;
+	public GameObject cam;
+
+	public Animator camAnim;
 
 	public bool playerDone;
 
@@ -21,6 +29,10 @@ public class BattleFlow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {	
+
+		cutoff = transMat.GetFloat ("_Cutoff");
+
+		camAnim = cam.GetComponent<Animator> ();
 
 		playerDone = false;
 		enemyAnim = enemy.GetComponent<Animator> ();
@@ -34,18 +46,27 @@ public class BattleFlow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (playerDone == true) {
+		if (playerDone == true) 
+		{
 			StartCoroutine ("setEnemyAtkTrue");
 			Debug.Log ("Ravage them");
 		} 
+
+		if (enemyControls.GetComponent<KillbotControls> ().curHealth == 0)
+		{
+			enemyControls.SetActive (false);
+			StartCoroutine ("finishBattle");
+		}
+			
+		transMat.SetFloat ("_Cutoff", cutoff);
 	}
 
 	public void atkOpt()
 	{
 		Debug.Log ("Next option");
+		atkOptButton.SetActive (false);
 		rangedButton.SetActive (true);
 		directButton.SetActive (true);
-		atkOptButton.SetActive (false);
 	}
 
 	public void rangedOpt()
@@ -104,7 +125,26 @@ public class BattleFlow : MonoBehaviour {
 		yield return null;
 	}
 
+	IEnumerator finishBattle()
+	{
+		StartCoroutine ("playerButtonDisable");
+		yield return new WaitForSeconds (2);
+		camAnim.SetBool ("Success", true);
+		yield return new WaitForSeconds (3);
+		StartCoroutine ("WinTrans");
+		yield return null;
+	}
+		
+	IEnumerator WinTrans()
+	{
+		while (cutoff < 1) {
+			cutoff += 0.01f * Time.deltaTime;
+			yield return null;
+		}
+	}
+
 }
+
 
 //First click button
 //then show options for that choice
