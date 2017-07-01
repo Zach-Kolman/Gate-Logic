@@ -41,6 +41,7 @@ public class BattleFlow : MonoBehaviour {
 		battleBGM.Play ();
 		rangedButton.SetActive (false);
 		directButton.SetActive (false);
+		StartCoroutine ("Transition");
 	}
 	
 	// Update is called once per frame
@@ -54,6 +55,7 @@ public class BattleFlow : MonoBehaviour {
 
 		if (enemyControls.GetComponent<KillbotControls> ().curHealth == 0)
 		{
+			StartCoroutine ("playerButtonDisable");
 			enemyControls.SetActive (false);
 			StartCoroutine ("finishBattle");
 		}
@@ -84,8 +86,10 @@ public class BattleFlow : MonoBehaviour {
 		playerAnim.SetBool ("Attack", true);
 		yield return new WaitForSeconds (4);
 		playerAnim.SetBool ("Attack", false);
-		playerDone = true;
-		yield return null;
+		if (enemy.activeInHierarchy == true) {
+			playerDone = true;
+			yield return null;
+		}
 	}
 
 	IEnumerator setEnemyAtkTrue()
@@ -96,7 +100,7 @@ public class BattleFlow : MonoBehaviour {
 		playerDone = false;
 		StartCoroutine ("playerButtonEnable");
 		yield return null;
-
+	
 	}
 
 
@@ -127,6 +131,7 @@ public class BattleFlow : MonoBehaviour {
 
 	IEnumerator finishBattle()
 	{
+
 		StartCoroutine ("playerButtonDisable");
 		yield return new WaitForSeconds (2);
 		camAnim.SetBool ("Success", true);
@@ -143,6 +148,15 @@ public class BattleFlow : MonoBehaviour {
 		}
 	}
 
+
+	IEnumerator Transition ()
+	{
+		while (cutoff > 0) {
+			cutoff -= 0.5f * Time.deltaTime;
+			yield return null;
+		}
+
+	}
 }
 
 
