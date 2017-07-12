@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class dialogueFlow : MonoBehaviour {
 
@@ -9,56 +10,47 @@ public class dialogueFlow : MonoBehaviour {
 	public GameObject dialogueCanvas;
 	public int listSize;
 	public string charName;
-	Text charNameDisplay;
-	Text dialogueDisplay;
+//	Text charNameDisplay;
+//	Text dialogueDisplay;
 	public List<string> dialogueTree;
 	public GameObject player;
 	public bool isTalking;
+	public Flowchart fungusActive;
 	// Use this for initialization
 	void Start () {
 
-		dialogueCanvas = GameObject.FindGameObjectWithTag ("DialogueCanvas");
-		dialogueCanvas.SetActive (false);
 
-		charNameDisplay = dialogueCanvas.transform.GetChild (2).GetComponent<Text> ();
-		dialogueDisplay = dialogueCanvas.transform.GetChild (3).GetComponent<Text> ();
 
-		isTalking = false;	
-		listSize = dialogueTree.Count;
+//		dialogueCanvas = GameObject.FindGameObjectWithTag ("DialogueCanvas");
+//		dialogueCanvas.SetActive (false);
+//
+//		charNameDisplay = dialogueCanvas.transform.GetChild (2).GetComponent<Text> ();
+//		dialogueDisplay = dialogueCanvas.transform.GetChild (3).GetComponent<Text> ();
+//
+//		isTalking = false;	
+//		listSize = dialogueTree.Count;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (isTalking == true) {
-			player.gameObject.transform.GetChild (2).gameObject.SetActive (true);
-			if (Input.GetKeyDown (KeyCode.E)) {
 
-				StartCoroutine ("runDialogue");
-			}
-		} else {
-			player.gameObject.transform.GetChild (2).gameObject.SetActive (false);
-		}
 			
 	}
 
 	public void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player") {
-
-			isTalking = true;
-		}
+		fungusActive.SendFungusMessage ("Activate runDialogue Starter");
+		
+		fungusActive.SetBooleanVariable ("isTalking", true);
 	}
 
 	public void OnTriggerExit(Collider other)
 	{
-		if (other.gameObject.tag == "Player") {
-
-			dialogueCanvas.SetActive (false);
-			isTalking = false;
 		
-		}
+		fungusActive.SetBooleanVariable ("isTalking", false);
+
 	}
 
 	IEnumerator runDialogue()
@@ -66,8 +58,8 @@ public class dialogueFlow : MonoBehaviour {
 		dialogueCanvas.SetActive (true);
 		for (inList = 0; inList <= listSize;) {
 
-			charNameDisplay.text = charName.ToString ();
-			dialogueDisplay.text = dialogueTree [inList].ToString ();
+//			charNameDisplay.text = charName.ToString ();
+//			dialogueDisplay.text = dialogueTree [inList].ToString ();
 			if (Input.GetKeyDown (KeyCode.E)) {
 				inList += 1;
 			}

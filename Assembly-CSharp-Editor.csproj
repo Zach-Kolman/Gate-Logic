@@ -46,6 +46,59 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Fungus\Scripts\Editor\AssetModProcessor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\BlockEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\BlockInspector.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\CallEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\CameraMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\CharacterEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\CommandEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\CommandListAdaptor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\ControlAudioEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\CustomGUI.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\DialogInputEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\EditorExtensions.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\EditorZoomArea.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\EventHandlerEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\EventWindow.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\FlowchartEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\FlowchartMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\FlowchartWindow.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\FungusEditorResources.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\FungusEditorResourcesGenerated.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\IfEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\InvokeEventEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\InvokeMethodEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\LabelEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\LocalizationEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\MenuEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\MenuTimerEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\NarrativeMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\PortraitEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SaveDataEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SaveMenuEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SaveMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SavePointLoadedEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SayEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SerializedPropertyExtensions.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SetColliderEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SetVariableEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\SpriteMenuItems.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\StageEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\VariableEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\VariableListAdaptor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\ViewEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\WriteEditor.cs" />
+     <Compile Include="Assets\Fungus\Scripts\Editor\WriterAudioEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\DropDownControl.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\ExecuteHandlerEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaBindingsEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaScriptEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaStoreEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaUtilsEditor.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\MenuItems.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LineEndings\Editor\LineEndingsEditMenu.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Editor\SfxrGenerator.cs" />
      <Compile Include="Assets\Old\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
      <Compile Include="Assets\Old\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
      <Compile Include="Assets\Old\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
@@ -106,6 +159,7 @@
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\Projectors\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\Fog.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
@@ -113,11 +167,13 @@
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\LutGen.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\FungusExamples\FungusLua\Localization\stringtable.txt" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\Fungus\Docs\README.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
@@ -133,32 +189,43 @@
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Fungus\Thirdparty\LeanTween\ReadMe.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Fungus\Fonts\Exo2\OFL.txt" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\Uber.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Old\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Fungus\Docs\LICENSE.txt" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\Fungus\Integrations\Playmaker\ReadMe.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Fungus\Scripts\link.xml" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\FXAA3.cginc" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\FungusExamples\FungusLua\Narrative\Resources\Lua\junglestory.txt" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Assets\FungusExamples\Attribution.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\README.txt" />
      <None Include="Assets\Old\BattleTransitions\BattleTransitions.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\FungusExamples\Sherlock\Readme.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\Old\Standard Assets\Effects\Projectors\Shaders\Projector Light.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\FungusTypes.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
      <None Include="Assets\Old\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\UI\Trackball.shader" />
@@ -166,6 +233,7 @@
      <None Include="Assets\Old\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\UnityTypes.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\Bloom.cginc" />
@@ -176,6 +244,7 @@
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\TAA.cginc" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Fungus\Integrations\Spine\Readme.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
@@ -184,6 +253,7 @@
      <None Include="Assets\Old\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\GrainGen.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Fungus\Fonts\Amaranth\SIL Open Font License.txt" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\FXAA.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Yarn Spinner\README.txt" />
@@ -193,12 +263,14 @@
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\LICENSE.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
@@ -207,6 +279,7 @@
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Fungus\Textures\Attribution.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
@@ -218,6 +291,7 @@
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
      <None Include="Assets\Old\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
      <None Include="Assets\Old\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\Old\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
@@ -225,8 +299,11 @@
      <None Include="Assets\Old\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Fungus\Docs\CHANGELOG.txt" />
+     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -287,6 +364,9 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Editor.ReorderableList">
+ <HintPath>C:/Users/zkolman/Gate Logic/Gate-Logic/Assets/Fungus/Thirdparty/Reorderable List Field/Editor/Editor.ReorderableList.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
