@@ -10,6 +10,7 @@ public class IdeaBulb : MonoBehaviour {
 	public GameObject[] talkies;
 	public int listSize;
 	public List<string> dialogueTree;
+	public GameObject NPC;
 
 
 	// Use this for initialization
@@ -36,6 +37,7 @@ public class IdeaBulb : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Talkers") 
 		{
+			NPC = other.gameObject;
 			speakBubble.SetActive (true);
 		
 		}
@@ -51,7 +53,7 @@ public class IdeaBulb : MonoBehaviour {
 	{
 		if (Input.GetKeyDown (KeyCode.E)) 
 		{
-			gameObject.GetComponent<DialogueBox> ().runDialogue ();
+			NPC.GetComponent<DialogueBox> ().runDialogue ();
 			yield return null;
 		}
 	}
