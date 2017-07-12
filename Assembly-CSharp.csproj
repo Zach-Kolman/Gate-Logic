@@ -197,6 +197,7 @@
      <Compile Include="Assets\Old\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Old\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\PlayerPersistance.cs" />
+     <Compile Include="Assets\Prefabs\DialogueBox.cs" />
      <Compile Include="Assets\Prefabs\IdeaBulb.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\Analyser.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\Compiler.cs" />

@@ -19,7 +19,7 @@ public class dialogueFlow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		dialogueCanvases = GameObject.FindGameObjectsWithTag ("DialogueCanvas");
+		dialogueCanvases = GameObject.FindGameObjectsWithTag ("DialogueCanvas");	
 
 
 		foreach (GameObject item in dialogueCanvases) {
