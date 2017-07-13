@@ -15,7 +15,7 @@ public class dialogueFlow : MonoBehaviour {
 	public List<string> dialogueTree;
 	public GameObject player;
 	public int isTalking;
-	public GameObject speakBubble;
+
 	// Use this for initialization
 	void Start () {
 
@@ -40,46 +40,5 @@ public class dialogueFlow : MonoBehaviour {
 	}
 
 
-
-	IEnumerator runDialogue()
-	{
-			new WaitForSeconds (0.1f);
-			dialogueCanvas.SetActive (true);
-			for (inList = 0; inList <= listSize;) {
-
-				charNameDisplay.text = charName.ToString ();
-				dialogueDisplay.text = dialogueTree [inList].ToString ();
-				if (Input.GetKeyDown (KeyCode.E)) {
-					inList += 1;
-				}
-
-//			if (inList > listSize) {
-//				dialogueCanvas.SetActive (false);
-//			}
-				yield return null;
-			}
-
-	}
-
-	IEnumerator ChatBubbleAppear()
-	{
-		if (isTalking == 1) {
-			speakBubble.GetComponent<MeshRenderer> ().enabled = true;
-			if (Input.GetKeyDown ("e")) {
-				StartCoroutine ("runDialogue");
-			}
-		}
-		yield return null;
-	}
-
-	IEnumerator ChatBubbleDisable()
-	{
-		if (isTalking == 0) {
-			speakBubble.GetComponent<MeshRenderer> ().enabled = false;
-		}
-
-		yield return null;
-	}
-		
 }
 

@@ -8,15 +8,13 @@ public class DialogueBox : MonoBehaviour {
 	public GameObject dialogueCanvas;
 	public int listSize;
 	public string charName;
-	Text charNameDisplay;
-	Text dialogueDisplay;
+	public Text charNameDisplay;
+	public Text dialogueDisplay;
 	public List<string> dialogueTree;
 	public int isTalking;
 	// Use this for initialization
 	void Start () {
 
-		charNameDisplay = transform.GetChild (2).GetComponent<Text> ();
-		dialogueDisplay = transform.GetChild (3).GetComponent<Text> ();
 
 		listSize = dialogueTree.Count;
 	}

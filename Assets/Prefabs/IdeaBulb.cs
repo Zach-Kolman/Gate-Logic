@@ -5,18 +5,17 @@ using UnityEngine.UI;
 
 public class IdeaBulb : MonoBehaviour {
 
-	public GameObject[] dialogueCanvases;
+
 	public GameObject speakBubble;
 	public GameObject[] talkies;
 	public int listSize;
 	public List<string> dialogueTree;
 	public GameObject NPC;
+	GameObject NPCcanvas;
 
 
 	// Use this for initialization
 	void Start () {
-
-		dialogueCanvases = GameObject.FindGameObjectsWithTag ("DialogueCanvas");
 
 		talkies = GameObject.FindGameObjectsWithTag ("Talkers");
 
@@ -31,22 +30,34 @@ public class IdeaBulb : MonoBehaviour {
 
 			StartCoroutine ("speechActivate");
 		}
+
+		if (speakBubble.activeInHierarchy == false) {
+
+			StopCoroutine ("speechActivate");
+		}
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Talkers") 
 		{
+			
 			NPC = other.gameObject;
 			speakBubble.SetActive (true);
-		
 		}
 
 	}
 
-	void OnTriggerExit()
+	void OnTriggerExit(Collider other)
 	{
-		speakBubble.SetActive (false);
+		if (other.gameObject.tag == "Talkers") {
+			NPC = other.gameObject;
+			NPCcanvas = NPC.transform.GetChild (0).gameObject;
+			NPCcanvas.SetActive (false);
+			speakBubble.SetActive (false);
+		
+		}
+
 	}
 
 	IEnumerator speechActivate()
@@ -54,6 +65,16 @@ public class IdeaBulb : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.E)) 
 		{
 			NPC.GetComponent<DialogueBox> ().runDialogue ();
+			yield return null;
+		}
+	}
+
+	IEnumerator speechDeactivate ()
+	{
+		if (gameObject.transform.GetChild (2).gameObject.activeInHierarchy == false) 
+		{
+			Debug.Log ("fuck");
+			NPCcanvas.SetActive (false);
 			yield return null;
 		}
 	}
