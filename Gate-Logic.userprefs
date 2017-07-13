@@ -5,11 +5,11 @@
       <File FileName="Assets\Old\Scripts\PlayerCOntroller.cs" Line="1" Column="1" />
       <File FileName="Assets\Old\Scripts\Moce.cs" Line="1" Column="1" />
       <File FileName="Assets\PlayerPersistance.cs" Line="1" Column="1" />
-      <File FileName="Assets\dialogueFlow.cs" Line="1" Column="1" />
+      <File FileName="Assets\dialogueFlow.cs" Line="41" Column="2" />
       <File FileName="Assets\Old\Scripts\BattleFlow.cs" Line="1" Column="1" />
       <File FileName="Assets\Old\Scripts\KillbotControls.cs" Line="1" Column="1" />
-      <File FileName="Assets\Prefabs\IdeaBulb.cs" Line="56" Column="52" />
-      <File FileName="Assets\Prefabs\DialogueBox.cs" Line="1" Column="1" />
+      <File FileName="Assets\Prefabs\IdeaBulb.cs" Line="53" Column="43" />
+      <File FileName="Assets\Prefabs\DialogueBox.cs" Line="12" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
