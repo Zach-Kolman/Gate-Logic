@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Hi Boss\n\n[[I Like Sally|Sally]]\n[[Oh Hai Mark|Oh Hai]]",
+		"position": {
+			"x": 322,
+			"y": 117
+		},
+		"colorID": 3
+	},
+	{
+		"title": "Sally",
+		"tags": "",
+		"body": "[[F U]]\n",
+		"position": {
+			"x": 903,
+			"y": 288
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Oh Hai",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 484,
+			"y": 447
+		},
+		"colorID": 0
+	}
+]

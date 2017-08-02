@@ -1,15 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Prefabs\IdeaBulb.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TestDialogueWindow.cs">
     <Files>
-      <File FileName="Assets\Old\Scripts\PlayerCOntroller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Old\Scripts\Moce.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlayerPersistance.cs" Line="1" Column="1" />
-      <File FileName="Assets\dialogueFlow.cs" Line="41" Column="2" />
-      <File FileName="Assets\Old\Scripts\BattleFlow.cs" Line="1" Column="1" />
-      <File FileName="Assets\Old\Scripts\KillbotControls.cs" Line="1" Column="1" />
-      <File FileName="Assets\Prefabs\IdeaBulb.cs" Line="53" Column="43" />
-      <File FileName="Assets\Prefabs\DialogueBox.cs" Line="12" Column="9" />
+      <File FileName="Assets\Scripts\BringToFront.cs" Line="8" Column="33" />
+      <File FileName="Assets\Scripts\DialoguePanel.cs" Line="45" Column="43" />
+      <File FileName="Assets\Scripts\TestDialogueWindow.cs" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\DisplayManager.cs" Line="36" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

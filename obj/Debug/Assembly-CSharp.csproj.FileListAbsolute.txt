@@ -100,11 +100,9 @@ C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.HoloLens.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.Networking.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.TestRunner.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.UI.dll
-C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.VR.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\Mono.Cecil.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\Unity.SerializationLogic.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\Unity.DataContract.dll
-C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\Unity.UNetWeaver.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\Mono.Cecil.Pdb.dll
@@ -117,7 +115,6 @@ C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.TestRunner.xml
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\nunit.framework.xml
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.HoloLens.xml
-C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\zkolman\Gate Logic\Gate-Logic\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\zkolman\Gate Logic\Gate-Logic\obj\Debug\Assembly-CSharp.dll
 C:\Users\zkolman\Gate Logic\Gate-Logic\obj\Debug\Assembly-CSharp.pdb
@@ -125,3 +122,7 @@ C:\Users\zkolman\GateLogicProj\Gate-Logic\Temp\bin\Debug\UnityEngine.Timeline.dl
 C:\Users\zkolman\GateLogicProj\Gate-Logic\Temp\bin\Debug\ExCSS.Unity.dll
 C:\Users\zkolman\GateLogicProj\Gate-Logic\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
 C:\Users\zkolman\GateLogicProj\Gate-Logic\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\zkolman\Gate Logic\Gate-Logic\Temp\bin\Debug\UnityEngine.Timeline.xml
