@@ -31,15 +31,20 @@ public class DialogueBox : MonoBehaviour {
 
 	private IEnumerator CoRunDialogue()
 	{
+		DialogueManager dialogueManager = DialogueManager.instance;
+		DialogueNode dialogueNode = dialogueManager.getDialogueNode (0);
 		dialogueCanvas.SetActive (true);
-		for (inList = 0; inList <= listSize;) {
+		while(dialogueNode.nodeId != -1)
+		{
 
 			charNameDisplay.text = charName.ToString ();
-			dialogueDisplay.text = dialogueTree [inList].ToString ();
+
 			if (Input.GetKeyDown (KeyCode.E)) {
-				inList += 1;
+
+				gameObject.transform.GetChild (0).transform.GetChild(3).GetComponent<Text>().text = dialogueNode.text;
+				dialogueNode = dialogueManager.getDialogueNode (dialogueNode.destID);
 			}
-				
+					
 			yield return null;
 		}
 

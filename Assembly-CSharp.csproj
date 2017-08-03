@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\dialogueFlow.cs" />
+     <Compile Include="Assets\DialogueNode.cs" />
      <Compile Include="Assets\Old\BattleTransitions\IntoBattleTrans.cs" />
      <Compile Include="Assets\Old\BattleTransitions\SimpleBlit.cs" />
      <Compile Include="Assets\Old\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
@@ -204,10 +205,17 @@
      <Compile Include="Assets\Old\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\PlayerPersistance.cs" />
      <Compile Include="Assets\Prefabs\DialogueBox.cs" />
+     <Compile Include="Assets\Prefabs\DialogueManager.cs" />
+     <Compile Include="Assets\Prefabs\GameManager.cs" />
      <Compile Include="Assets\Prefabs\IdeaBulb.cs" />
      <Compile Include="Assets\Scripts\BringToFront.cs" />
+     <Compile Include="Assets\Scripts\Conversation.cs" />
+     <Compile Include="Assets\Scripts\Conversationlist.cs" />
      <Compile Include="Assets\Scripts\DialoguePanel.cs" />
      <Compile Include="Assets\Scripts\DisplayManager.cs" />
+     <Compile Include="Assets\Scripts\NewTutorial\Dialog.cs" />
+     <Compile Include="Assets\Scripts\NewTutorial\DialogNode.cs" />
+     <Compile Include="Assets\Scripts\NewTutorial\DialogOption.cs" />
      <Compile Include="Assets\Scripts\TestDialogueWindow.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\Analyser.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\Compiler.cs" />
@@ -245,6 +253,7 @@
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Old\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\TestDialogueRun.xml" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Old\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
