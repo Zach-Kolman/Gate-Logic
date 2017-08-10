@@ -209,6 +209,7 @@
      <Compile Include="Assets\Prefabs\GameManager.cs" />
      <Compile Include="Assets\Prefabs\IdeaBulb.cs" />
      <Compile Include="Assets\Scripts\BringToFront.cs" />
+     <Compile Include="Assets\Scripts\CamSwap.cs" />
      <Compile Include="Assets\Scripts\Conversation.cs" />
      <Compile Include="Assets\Scripts\Conversationlist.cs" />
      <Compile Include="Assets\Scripts\DialoguePanel.cs" />
@@ -216,6 +217,7 @@
      <Compile Include="Assets\Scripts\NewTutorial\Dialog.cs" />
      <Compile Include="Assets\Scripts\NewTutorial\DialogNode.cs" />
      <Compile Include="Assets\Scripts\NewTutorial\DialogOption.cs" />
+     <Compile Include="Assets\Scripts\NewTutorial\NPCDialogue.cs" />
      <Compile Include="Assets\Scripts\TestDialogueWindow.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\Analyser.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\Compiler.cs" />

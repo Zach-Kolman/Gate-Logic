@@ -75,7 +75,23 @@ public class DialogueManager : MonoBehaviour {
 		<Text>Weve only been married six years.</Text>
 		<DestinationNodeID>-1</DestinationNodeID>
 	</DialogueNode>
+	<DialogueNode>
+		<NodeID>2</NodeID>
+		<Text>Not much XD</Text>
+		<DestinationNodeID>-1</DestinationNodeID>
+	</DialogueNode>
+	<DialogueNode>
+		<NodeID>3</NodeID>
+		<Text>Greetings friend.</Text>
+		<DestinationNodeID>-1</DestinationNodeID>
+	</DialogueNode>
+	<DialogueNode>
+		<NodeID>-1</NodeID>
+		<Text></Text>
+		<DestinationNodeID></DestinationNodeID>
+	</DialogueNode>
 </Dialogue>";
+
 
 		DialogueManager dialogueManager = DialogueManager.instance;
 

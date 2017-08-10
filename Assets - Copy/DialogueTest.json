@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Hey bub.\n\nI'm Dandy.\n\n[[Fuck you Dandy|Fuck Dandy]]\n[[Oh hai Dandy|Hey Dandy]]",
+		"position": {
+			"x": 363,
+			"y": 125
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Fuck Dandy",
+		"tags": "",
+		"body": "Damn dude...\n\nWtf.\n\nGet out of here.",
+		"position": {
+			"x": 685,
+			"y": 173
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Hey Dandy",
+		"tags": "",
+		"body": "Hey!\n\nGood looks man!\n\nGlad we met!",
+		"position": {
+			"x": 354,
+			"y": 405
+		},
+		"colorID": 0
+	}
+]

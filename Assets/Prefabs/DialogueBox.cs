@@ -12,6 +12,7 @@ public class DialogueBox : MonoBehaviour {
 	public Text dialogueDisplay;
 	public List<string> dialogueTree;
 	public int isTalking;
+	public int startLine;
 	// Use this for initialization
 	void Start () {
 
@@ -32,7 +33,7 @@ public class DialogueBox : MonoBehaviour {
 	private IEnumerator CoRunDialogue()
 	{
 		DialogueManager dialogueManager = DialogueManager.instance;
-		DialogueNode dialogueNode = dialogueManager.getDialogueNode (0);
+		DialogueNode dialogueNode = dialogueManager.getDialogueNode (startLine);
 		dialogueCanvas.SetActive (true);
 		while(dialogueNode.nodeId != -1)
 		{
