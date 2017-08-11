@@ -34,16 +34,24 @@ public class DialogueBox : MonoBehaviour {
 	{
 		DialogueManager dialogueManager = DialogueManager.instance;
 		DialogueNode dialogueNode = dialogueManager.getDialogueNode (startLine);
+		DialogueOption opt1 = dialogueNode.dialogueOptionList [0];
+		DialogueOption opt2 = dialogueNode.dialogueOptionList [1];
+		DialogueOption opt3 = dialogueNode.dialogueOptionList [2];
+
 		dialogueCanvas.SetActive (true);
 		while(dialogueNode.nodeId != -1)
 		{
 
 			charNameDisplay.text = charName.ToString ();
 
-			if (Input.GetKeyDown (KeyCode.E)) {
+			if (Input.GetKeyDown (KeyCode.E) && dialogueNode.dialogueOptionList.Count == 0) {
+				
 
-				gameObject.transform.GetChild (0).transform.GetChild(3).GetComponent<Text>().text = dialogueNode.text;
-				dialogueNode = dialogueManager.getDialogueNode (dialogueNode.destID);
+				gameObject.transform.GetChild (0).transform.GetChild (3).GetComponent<Text> ().text = dialogueNode.text;
+
+
+			} else {
+				gameObject.transform.GetChild (0).transform.GetChild (4).transform.GetChild(0).GetComponent<Text>().text = opt1.Text;
 			}
 					
 			yield return null;

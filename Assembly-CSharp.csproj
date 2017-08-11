@@ -216,7 +216,7 @@
      <Compile Include="Assets\Scripts\DisplayManager.cs" />
      <Compile Include="Assets\Scripts\NewTutorial\Dialog.cs" />
      <Compile Include="Assets\Scripts\NewTutorial\DialogNode.cs" />
-     <Compile Include="Assets\Scripts\NewTutorial\DialogOption.cs" />
+     <Compile Include="Assets\Scripts\NewTutorial\DialogueOption.cs" />
      <Compile Include="Assets\Scripts\NewTutorial\NPCDialogue.cs" />
      <Compile Include="Assets\Scripts\TestDialogueWindow.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\Analyser.cs" />

@@ -8,16 +8,16 @@ public class DialogNode : MonoBehaviour {
 
 	public string Texty;
 
-	public List<DialogOption> Options;
+	public List<DialogueOption> Options;
 
 	public DialogNode () {
 
-		Options = new List<DialogOption> ();
+		Options = new List<DialogueOption> ();
 	}
 
 	public DialogNode(string text)
 	{
 		Texty = text;
-		Options = new List<DialogOption> ();
+		Options = new List<DialogueOption> ();
 	}
 }

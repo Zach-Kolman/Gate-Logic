@@ -73,26 +73,39 @@ public class DialogueManager : MonoBehaviour {
 	<DialogueNode>
 		<NodeID>1</NodeID>
 		<Text>Weve only been married six years.</Text>
-		<DestinationNodeID>-1</DestinationNodeID>
+		<Option>
+			<DialogueOption>
+				<Text></Text>
+				<DestinationNodeID>-1</DestinationNodeID>
+		</DialogueOption>
+		</Option>
 	</DialogueNode>
 	<DialogueNode>
 		<NodeID>2</NodeID>
 		<Text>Not much XD</Text>
-		<DestinationNodeID>-1</DestinationNodeID>
+		<Option>
+			<DialogueOption>
+				<Text></Text>
+				<DestinationNodeID>-1</DestinationNodeID>
+			</DialogueOption>
+		</Option>
 	</DialogueNode>
 	<DialogueNode>
 		<NodeID>3</NodeID>
-		<Text>Greetings friend.</Text>
-		<DestinationNodeID>-1</DestinationNodeID>
+		<Text>Greetings</Text>
+		<Option>
+			<DialogueOption>
+				<Text></Text>
+				<DestinationNodeID>-1</DestinationNodeID>
+			</DialogueOption>
+		</Option>
 	</DialogueNode>
 	<DialogueNode>
 		<NodeID>-1</NodeID>
-		<Text></Text>
-		<DestinationNodeID></DestinationNodeID>
 	</DialogueNode>
 </Dialogue>";
 
-
+  
 		DialogueManager dialogueManager = DialogueManager.instance;
 
 		using (XmlReader reader = XmlReader.Create (new StringReader (xmlString))) {
@@ -102,13 +115,24 @@ public class DialogueManager : MonoBehaviour {
 				reader.ReadToFollowing ("Text");
 				string text = reader.ReadElementContentAsString ();
 
-				reader.ReadToFollowing ("DestinationNodeID");
-				int destId = reader.ReadElementContentAsInt ();
+				reader.ReadToFollowing ("Option");
 
-				DialogueNode dialogueNode = new DialogueNode (nodeId, text, destId);
+				DialogueNode dialogueNode = new DialogueNode (nodeId, text);
 				dialogueManager.DialogueNodeList.Add(dialogueNode);
 
-					//dialogueNode.dialogueOptionList.add(new DialogueOption(text, destId))
+				while(reader.ReadToFollowing("DialogueOption"))
+					{
+					
+					reader.ReadToFollowing ("Text");
+					string optText = reader.ReadElementContentAsString();
+
+					reader.ReadToFollowing ("DestinationNodeID");
+					int OptDestId = reader.ReadElementContentAsInt ();
+
+					dialogueNode.addOption(new DialogueOption (optText, OptDestId));
+
+					}
+
 
 			}
 		}
@@ -117,7 +141,6 @@ public class DialogueManager : MonoBehaviour {
 
 			Debug.Log ("Text: " + n.text);
 			Debug.Log ("NodeId: " + n.nodeId);
-			Debug.Log ("DestId: " + n.destID);
 
 		}
 

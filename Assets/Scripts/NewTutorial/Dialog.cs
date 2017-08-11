@@ -26,12 +26,12 @@ public class Dialog : MonoBehaviour {
 		if (!Nodes.Contains (node))
 			AddNode (node);
 
-		DialogOption opt;
+		DialogueOption opt;
 
 		if (dest == null)
-			opt = new DialogOption (text, -1);
+			opt = new DialogueOption (text, -1);
 		else
-			opt = new DialogOption (text, dest.NodeID);
+			opt = new DialogueOption (text, dest.NodeID);
 
 		node.Options.Add (opt);
 	}

@@ -7,15 +7,17 @@ public class DialogueNode : MonoBehaviour {
 
 	public int nodeId;
 	public string text;
-	public int destID;
-	// public List<DialogueOption> dialogueOptionList
+	public List<DialogueOption> dialogueOptionList;
 
-	public DialogueNode(int nodeId, string text, int destID)
+	public DialogueNode(int nodeId, string text)
 	{
 		this.nodeId = nodeId;
 		this.text = text;
-		this.destID = destID;
 	}
 
+	public void addOption(DialogueOption choice)
+	{
+		dialogueOptionList.Add (choice);
+	}
 
 }
