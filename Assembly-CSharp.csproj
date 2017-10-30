@@ -208,6 +208,10 @@
      <Compile Include="Assets\Prefabs\DialogueManager.cs" />
      <Compile Include="Assets\Prefabs\GameManager.cs" />
      <Compile Include="Assets\Prefabs\IdeaBulb.cs" />
+     <Compile Include="Assets\Scripts\Battle Mechanics\EnemyBase.cs" />
+     <Compile Include="Assets\Scripts\Battle Mechanics\enemyStateMachine.cs" />
+     <Compile Include="Assets\Scripts\Battle Mechanics\PlayerBase.cs" />
+     <Compile Include="Assets\Scripts\Battle Mechanics\playerStateMachine.cs" />
      <Compile Include="Assets\Scripts\BringToFront.cs" />
      <Compile Include="Assets\Scripts\Conversation.cs" />
      <Compile Include="Assets\Scripts\Conversationlist.cs" />
